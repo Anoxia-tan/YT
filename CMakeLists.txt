@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12.1)
-#设置
+#设置生成库及可执行程序位置
 set(PUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/output)
 #添加子目录
 add_subdirectory(VCommand)

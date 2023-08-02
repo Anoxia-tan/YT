@@ -11,12 +11,12 @@ set(CMAKE_PREFIX_PATH $ENV{QT5_DIR})
 find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt5 COMPONENTS Widgets REQUIRED )
 link_directories(${PUT_PATH})
-link_directories($ENV{QT5_BIN})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../VCommand)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../VToolBase)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../VPartTool)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../VToolMgr)
 set(EXECUTABLE_OUTPUT_PATH ${PUT_PATH})
+# set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT MainTest)
 add_executable(
     MainTest 
     "main.cc"
